@@ -30,7 +30,7 @@ try:
         api_key=st.secrets["GITHUB_TOKEN"] 
     )
     # Common model names: "gpt-4o", "gpt-4o-mini", or "phi-3-medium-128k-instruct"
-    model_name = st.secrets.get("MODEL_NAME", "gpt-4o-mini") 
+    model_name = st.secrets.get("MODEL_NAME", "gpt-5.3-Codex") 
 except Exception as e:
     st.error(f"⚠️ API Configuration error: {e}")
     st.stop()
